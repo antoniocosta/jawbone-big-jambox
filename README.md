@@ -226,14 +226,17 @@ docs/private/        (gitignored) your own backups and dumps
 ## Legal
 
 - **This repo's own work:** the `jambox` tool, tests, install script, udev
-  rule and documentation (`docs/PROTOCOL.md`, this README) are original work.
-  They were written to let owners maintain hardware they own, through
-  interoperability with a discontinued product.
-- **Jawbone's material:** the firmware images, the official updaters and
-  the manuals remain the copyright of Jawbone (AliphCom). They are archived
-  here only to preserve an abandoned product for its owners. If you publish
-  this repo, consider shipping the tool, docs and checksums without those
-  binaries, and pointing users to the existing community mirror instead.
+  rule and documentation (`docs/PROTOCOL.md`, this README) are original work,
+  licensed under the **GNU General Public License v3.0 or later** (see
+  [`LICENSE`](LICENSE)). They were written to let owners maintain hardware
+  they own, through interoperability with a discontinued product. The GPL
+  keeps every modified or ported version open to owners too.
+- **Jawbone's material:** the firmware images, the official updaters, the
+  manuals and the voice samples are **not** covered by the GPL. They remain
+  the copyright of Jawbone (AliphCom). They are archived here only to
+  preserve an abandoned product for its owners, unmodified and with their
+  original checksums. If you are a rights holder and object to their
+  inclusion, please open an issue and they will be removed.
 - **No warranty:** use the tool at your own risk. Flashing firmware always
   carries some risk; `jambox` backs up the speaker before every update to
   keep that risk as low as possible.

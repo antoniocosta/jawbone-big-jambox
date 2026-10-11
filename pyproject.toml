@@ -8,6 +8,8 @@ version = "0.1.0"
 description = "Read, back up, configure and update a Jawbone BIG JAMBOX from Linux"
 readme = "README.md"
 requires-python = ">=3.9"
+license = {text = "GPL-3.0-or-later"}
+classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
 dependencies = ["pyusb>=1.2"]
 
 [project.scripts]

@@ -1,0 +1,7 @@
+# Private, unmasked device data (serial, Bluetooth address, pairing keys, backups, logs)
+docs/private/
+
+# Python build artefacts
+__pycache__/
+build/
+*.egg-info/

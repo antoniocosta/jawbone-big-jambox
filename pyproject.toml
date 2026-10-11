@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jambox"
+version = "0.1.0"
+description = "Read, back up, configure and update a Jawbone BIG JAMBOX from Linux"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["pyusb>=1.2"]
+
+[project.scripts]
+jambox = "jambox.cli:main"
+
+[tool.setuptools]
+packages = ["jambox"]

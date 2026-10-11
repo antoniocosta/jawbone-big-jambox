@@ -1,0 +1,7 @@
+# Jawbone devices (vendor 1f6f, all modes: HID 0043/0044, HCI, DFU 8000):
+# let users in group plugdev open them (needed by tools/ and re/linux/ without sudo).
+SUBSYSTEM=="usb", ATTR{idVendor}=="1f6f", MODE="0664", GROUP="plugdev"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="1f6f", MODE="0660", GROUP="plugdev"
+# Keep the Linux Bluetooth driver (btusb) off Jawbone service mode (1f6f:8000):
+# the speaker runs an on-chip stack and btusb's HCI Reset only gets in the way.
+ACTION=="bind", SUBSYSTEM=="usb", DRIVER=="btusb", ATTRS{idVendor}=="1f6f", RUN+="/bin/sh -c 'echo -n %k > /sys/bus/usb/drivers/btusb/unbind'"
